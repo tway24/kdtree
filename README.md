@@ -49,6 +49,6 @@ How to run:
 	> make clean : removes query_kdtree binary
 
 
-NOTE: In the submitted directory, binaries (build_kdtree and query_kdtree) are already present
+
 
 
