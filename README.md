@@ -1,3 +1,17 @@
+Finding a nearest neighbor in high dimensional space is very computation intesive task. Brute-force algorithm will require to find distance from each point in training dataset and then select closest point. So, time complexity of brute-force search will be O(n*k), where n is total number of points in dataset and k is the dimensionality.
+
+k-d tree is a binary tree, which divides data at each level based on some criteria. And, leaf node contains set of K-dimensional datapoints. Becaues of binary tree datastructure, searching for nearest neighbor is efficient. But, sometime depending upon division of dataset, k-d tree might not give accurate nearest neighbor.  
+For more information please visit this wiki page.
+https://en.wikipedia.org/wiki/K-d_tree
+
+To imporve k-d tree accuracy and keeping efficiency, I have developed this library which achieve following time complexity:
+Time complexity = O(log n) + O(a * p *k) = O(a * p * k) // where ‘a’ is total adjacent nodes and ‘p’ is number of points in each node
+
+Time complexity comparision with brute-formce:
+If there are 10000 5-dimensional datapoints, brute-force will consume O(50000). 
+If k-d tree is configured to have 10 points per leaf node and to search 10 adjacent nodes, it will consume O(10*10*5) = O(500)
+
+For more details on implementation and library usage please refer to Implementation_details.pdf . 
 ========================================================================================================
 'kdtree' directory structure:
 
