@@ -5,7 +5,7 @@ MYPROGRAM=query_kdtree
 MYINCLUDES=../library/
 CC=g++
 COMP_STD=-std=c++11
-TREE_FILE=../treeDB/kdtree_uber.txt
+TREE_FILE=../treeDB/kdtree.txt
 QUERY_FILE=../input/query_data.csv
 OUTPUT_FILE=../output/query_output.txt
 #------------------------------------------------------------------------------
