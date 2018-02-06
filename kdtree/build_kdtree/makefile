@@ -6,7 +6,7 @@ MYINCLUDES=../library/
 CC=g++
 COMP_STD=-std=c++11
 INPUT_FILE=../input/sample_data.csv
-OUTPUT_FILE=../treeDB/kdtree_uber.txt
+OUTPUT_FILE=../treeDB/kdtree.txt
 #------------------------------------------------------------------------------
 
 
